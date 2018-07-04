@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <com.ssomai.android.scalablelayout.ScalableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+
+        app:scale_base_height="40"
+        app:scale_base_width="360">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/addUser"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
+            app:scale_width="360"
+            app:scale_textsize="30"/>
+
+    </com.ssomai.android.scalablelayout.ScalableLayout>
+
+    <com.ssomai.android.scalablelayout.ScalableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+
+
+        app:scale_base_height="360"
+        app:scale_base_width="360">
+
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:scale_height="100"
+            app:scale_width="100"
+            app:scale_top="30"
+            app:scale_left="130"
+            android:id="@+id/addImg"
+            />
+        <Button
+            android:id="@+id/addImgBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:scale_height="40"
+            app:scale_width="150"
+            app:scale_left="105"
+            app:scale_top="140"
+            app:scale_textsize="15"
+            android:text="@string/addPhoto"/>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:scale_height="40"
+            app:scale_width="90"
+            app:scale_left="10"
+            app:scale_top="210"
+            app:scale_textsize="15"
+            android:text="@string/name"
+            android:textAlignment="center"
+            android:gravity="center_vertical"/>
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:scale_height="40"
+            app:scale_width="250"
+            app:scale_left="100"
+            app:scale_top="210"
+            app:scale_textsize="15"
+            android:hint="@string/editText"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:scale_height="40"
+            app:scale_width="90"
+            app:scale_left="10"
+            app:scale_top="260"
+            app:scale_textsize="15"
+
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:text="@string/phoneNum"/>
+        <EditText
+            android:id="@+id/editPhoneNum"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:scale_height="40"
+            app:scale_width="250"
+            app:scale_left="100"
+            app:scale_top="260"
+            app:scale_textsize="15"
+            android:hint="@string/editText"/>
+
+    </com.ssomai.android.scalablelayout.ScalableLayout>
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </View>
+    <com.ssomai.android.scalablelayout.ScalableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+
+        app:scale_base_height="60"
+        app:scale_base_width="360"
+
+        >
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+
+            app:scale_height="60"
+            app:scale_textsize="20"
+
+            app:scale_width="180"
+
+            />
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/ok"
+
+            app:scale_height="60"
+            app:scale_left="180"
+            app:scale_textsize="20"
+
+            app:scale_width="180" />
+
+
+    </com.ssomai.android.scalablelayout.ScalableLayout>
+</LinearLayout>
